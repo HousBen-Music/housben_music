@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <link rel="stylesheet" href="Housben.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HousBen Música</title>
+    <!-- Importar la fuente Orbitron -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Importar Font Awesome para los iconos -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center; /* Alinea todo el texto al centro */
+        }
+
+        a {
+            color: rgb(0, 255, 132);
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        h1, h2 {
+            font-weight: 700;
+            text-align: center; /* Alinea los encabezados al centro */
+        }
+
+        p {
+            text-align: center; /* Alinea los párrafos al centro */
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center; /* Alinea la lista al centro */
+            margin: 0;
+        }
+
+        li {
+            margin: 10px 0;
+        }
+
+        iframe {
+            margin: 10px 0;
+            border: none;
+            display: block; /* Hace que el iframe se comporte como un bloque */
+            margin-left: auto; /* Alinea el iframe a la izquierda */
+            margin-right: auto; /* Alinea el iframe a la derecha */
+        }
+
+        /* Estilos del banner */
+        .banner-container {
+            position: relative;
+            width: 100%;
+        }
+
+        .banner {
+            width: 100%;
+            height: auto;
+        }
+
+        .banner-links {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+
+        .banner-links a {
+            font-size: 40px;  /* Tamaño de los iconos */
+            color: white;
+            margin: 0 20px;
+            padding: 15px;
+            border-radius: 50%;
+            background-color: rgba(0, 0, 0, 0.5);
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .banner-links a:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+            transform: scale(1.1);
+        }
+
+        /* Estilos para el logo */
+        .logo-container {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 10; /* Asegura que el logo esté encima de otros elementos */
+        }
+
+        .logo-container img {
+            width: 100px;  /* Tamaño pequeño del logo */
+            height: auto;
+        }
+
+        footer {
+            text-align: center; /* Alinea el pie de página al centro */
+        }
+    </style>
+</head>
+<body>
+    <script src="Housben.JS"></script>
+    <header>
+        <!-- Logo en la parte superior, encima del banner -->
+        <div class="logo-container">
+            <img src="Imagen/CIRCULAR LOGO.png" alt="Logo de HousBen">
+        </div>
+
+        <div class="banner-container">
+            <img src="Imagen/Banner.jpg" alt="Banner de HousBen" class="banner">
+            <div class="banner-links">
+                <!-- Enlaces con iconos -->
+                <a href="https://www.instagram.com/housben_music/?hl=es" target="_blank">
+                    <i class="fab fa-instagram"></i> <!-- Icono de Instagram -->
+                </a>
+                <a href="https://www.youtube.com/@housbenmusic" target="_blank">
+                    <i class="fab fa-youtube"></i> <!-- Icono de YouTube -->
+                </a>
+                <a href="https://soundcloud.com/housbenmusic" target="_blank">
+                    <i class="fab fa-soundcloud"></i> <!-- Icono de SoundCloud -->
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <h1>HousBen</h1>
+    <p>Productor musical de EDM</p>
+
+    <!-- Redes sociales -->
+    <nav>
+        <h2>Sígueme en mis redes</h2>
+        <ul>
+            <li><a href="https://open.spotify.com/intl-es/artist/551hsMbADI6CY6jSG3pWJd?si=IpwySSnLSSyiI9PUp-gA5Q&nd=1&dlsi=ba5acf148c674774" target="_blank">Spotify</a></li>
+            <li><a href="https://soundcloud.com/housbenmusic" target="_blank">SoundCloud</a></li>
+            <li><a href="https://www.instagram.com/housben_music/?hl=es" target="_blank">Instagram</a></li>
+            <li><a href="https://web.facebook.com/people/HousBen-Music/100068070485411/" target="_blank">Facebook</a></li>
+            <li><a href="https://www.youtube.com/@housbenmusic" target="_blank">YouTube</a></li>
+        </ul>
+    </nav>
+
+    <!-- Lista de canciones -->
+    <section>
+        <section>
+    <h2>Mi Último Remix</h2>
+    <div class="video-thumbnail" id="video-thumbnail">
+        <img src="https://img.youtube.com/vi/0kTXpBVCy9o/0.jpg" alt="Miniatura del video">
+        <iframe id="video-iframe" src="https://www.youtube.com/embed/0kTXpBVCy9o?autoplay=1" allow="autoplay"></iframe>
+    </div>
+</section>
+
+
+        <h2>ESCUCHA MIS TRACKS</h2>
+        <ul>
+            <li>"Come To Me"</li>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" 
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/housbenmusic/come-to-me&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+
+            <li>"Like That"</li>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" 
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/housbenmusic/like-that&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+
+            <li>"Fresh Start"</li>
+            <iframe width="100%" height="166" scrolling="no" frameborder="no" 
+                src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/housbenmusic/fresh-start&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true">
+            </iframe>
+        </ul>
+    </section>
+
+    <!-- Información sobre HousBen -->
+    <section>
+        <h2>SOBRE HOUSBEN</h2>
+        <p>¡Hola! Soy HousBen, un productor apasionado por el house y demás géneros de la música Electrónica. Mi misión es crear música que conecte con las emociones y lleve a mis oyentes a otra dimensión. ¡Explora mi trabajo y acompáñame en esta aventura musical!</p>
+    </section>
+
+    <!-- Pie de página -->
+    <footer>
+        <p>&copy; 2024 HousBen. Todos los derechos reservados.</p>
+        <p>Encuéntrame en todas las plataformas de música digital.</p>
+    </footer>
+</body>
+</html>
